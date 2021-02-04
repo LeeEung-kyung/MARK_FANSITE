@@ -104,7 +104,6 @@ function delete_popup(){
 var message = "{{ message }}";
 if (message=="한계초과"){
     alert("게시글 내용을 초과하였습니다");
-    window.location.href = "{% url 'board:auth_list' %}";
 }
 if (message=="출입금지"){
     alert("작성자나 관리자가 아닙니다");

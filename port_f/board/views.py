@@ -103,7 +103,7 @@ def notice_create(request):
                 obj = Notice(subject=request.POST['subject'], name=name, memo=request.POST['memo'])
                 obj.save()
                 return redirect('board:notice_list') 
-            else:    
+            else:   
                 message="한계초과"
                 form = NoticeForm()
                 return render(request, 'board/notice_create.html', {'form':form, 'message':message})
